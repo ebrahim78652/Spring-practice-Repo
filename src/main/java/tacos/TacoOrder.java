@@ -14,11 +14,15 @@ public class TacoOrder {
     private String ccNumber;
     private String ccExpiration;
     private String ccCVV;
+    private Long id;
+    private Date placedAt;
+
+    //what is the point of the serial version UID?
+    private static final long serialVersionUID = 1L;
     private List<Taco> tacos = new ArrayList<>();
 
     //added for data persistance
-    private Long id;
-    private Date placedAt;
+
     public void addTaco(Taco taco) {
         this.tacos.add(taco);
     }
