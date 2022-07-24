@@ -17,7 +17,7 @@ public class JdbcIngredientRepository implements IngredientRepository{
 
     private JdbcTemplate jdbcTemplate;
     //make a constructor to insert the JDBCTemplate dependency into this class.
-    @Autowired
+
     public JdbcIngredientRepository(JdbcTemplate jdbcTemplate){
         this.jdbcTemplate = jdbcTemplate;
     }
